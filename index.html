@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <main>
+    <h1>
+      <span>SPLI</span>
+      <span>TTER</span>
+    </h1>
+    <section class="splitter_card">
+      <div class="tip-calculator">
+
+        <!-- Left Side -->
+        <div class="calculator-form">
+
+          <div class="form-group">
+            <label for="bill">Bill</label>
+
+            <div class="input-wrapper">
+              <span>$</span>
+              <input type="number" id="bill" placeholder="0" value="142.55">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="tip_buttons">Select Tip %</p>
+
+            <div class="tip-buttons" id="tip_buttons">
+              <button>5%</button>
+              <button>10%</button>
+              <button class="active">15%</button>
+              <button>25%</button>
+              <button>50%</button>
+
+              <input aria-label="enter custom tip" id="custom_tip" type="text" placeholder="Custom" class="custom-tip">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-head">
+              <label for="people">Number of People</label>
+              <p class="error_text">Can’t be zero</p>
+            </div>
+            <div class="input-wrapper">
+              <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#1f1f1f">
+                  <path
+                    d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z" />
+                </svg></span>
+              <input type="number" id="people" placeholder="0" value="5">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="result-section">
+
+          <div class="result-container">
+
+            <div class="result-box">
+              <div>
+                <h3>Tip Amount</h3>
+                <p>/ person</p>
+              </div>
+
+              <span class="tip_amount amount">$4.27</span>
+            </div>
+
+            <div class="result-box">
+              <div>
+                <h3>Total</h3>
+                <p>/ person</p>
+              </div>
+
+              <span class="total_amount amount">$32.79</span>
+            </div>
+
+          </div>
+
+          <button class="reset-btn" disabled>RESET</button>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  <script src="main.js"></script>
+</body>
+
+</html>
