@@ -59,11 +59,11 @@ main {
 
 .tip-calculator {
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
 
 .result-section {
-    min-width: 350px;
+    min-width: 300px;
     background-color: var(--Green900);
     padding: 2rem;
     display: flex;
@@ -191,7 +191,7 @@ label,
 .calculator-form {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
 }
 
 .input-head {
